@@ -1,0 +1,49 @@
+프로젝트 진행
+다음 주 월요일까지 평가과제 제출해야 함
+GUI 베이스 프로그래밍 수행할 예정
+
+JavaFX => 이번에 수행할 것
+UI: User Interface (웹 디자인)
+UX: User Experience
+발전단계AWT - Swing - Java FX
+
+창을 하나 설계해서 내야 함
+// JAVA FX에 대해서 부족한 부분 추가적으로 학습해 볼 것
+
+Java 8.0에는 JAVA FX를 별도로 다운로드 받을 필요없음
+Java 7.0에는 별도로 다운로드 받아야 함
+
+자바 편집기 다운로드 받는 법
+Menu - downloads - java - all java downloads - Java FX - Java Archive: Download - JavaFX Scene Builder (편집기)
+- JavaFX Scene Builder 2.0 Related Downloads 
+Java APIs : JAVA Resources : API 다운경로
+
+자바 편집기 사용등록하는 법
+Java Build paths - Libraries - Add external JARs
+C:\Program Files\Java\jdk1.8.0_131\jre\lib\ext // 경로: jfxrt.jar
+jre - access rules - accessible - Rule pattern: javafx/**
+꼭 상속을 받아야 함 : Application
+
+// Scene Builder 이용하는 법
+플러그인 설치하는 법: Help - Eclipse Marketplace: javafx search - e(fx)clipsce 2.4.0 install
+사용하는 법: New - Other - javafx 
+
+eclipse - window - javafx - browse -> program Files(x86): javafx - javafx scene builder 2.0.exe 
+javaFx - New FXML Document - next - name: root -  AnchroPane: 좌표형태로 내용을 배치 - finish
+
+root.fxml - open with scenebuilder => containers: 어떻게 배치할 것인지 - StackPane:컨트롤들이 겹쳐지는 형태
+                                                                       - Control: 설계를 한 버튼과 관련된 내용
+                                                                         (control들은 컨테이너 위에 배치)
+
+Container: AnchorPane - Controls: Button(버튼생성) / PasswordField(비밀번호) / TextField(아이디) 
+
+HBox: 버튼을 수평적으로 배치 (Horizontal)
+VBox: 버튼을 수직적으로 배치 (Vertical)
+Allignment - center: 중앙배치
+
+initializable (jre 아님!) => 이 인터페이스를 반드시 상속받도록 함
+fx:controller = "p03.javafx.fxml.controller.RootController": 동작을 해야 하는 파일의 위치를 서술 => fxml 파일에 기술
+
+간단한 설계를 해서 가져오면 될 것!
+화면을 설계해서 읽어와서 가져오기!
+버튼이 눌려졌을 때 동작도 설계해서 가져올 것!
